@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Proveedores</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Proveedores</h1>
+        </header>
+         <form id="forma" action="javascript:procesa()">
+        <p><em>El borde azul indica obligatorio</em></p>
+        
+        <p>
+            <label accesskey="S">
+                Clave
+                <input name="clave" type="password" autofocus required autocomplete="off"
+                       pattern=".{5,30}" maxlength="30" size="33"
+                       placeholder="1 a10 digitos">
+            </label>
+            <br><output id="salidaClave"></output>
+        </p>
+        
+        <p>
+            <label accesskey="N">
+                Nombre
+                <input name="nombre" type="text" required
+                       pattern=".{1,30}" maxlength="30" size="33"
+                       placeholder="1 a 50 caracteres">
+            </label>
+            <br><output id="salidaNombre"></output>
+        </p>
+        <p>
+            <label accesskey="T">
+                TelÃ©fono
+                <input name="telefono" type="tel" required pattern="\d{10,14}" maxlength="14"
+                       size="14" placeholder="De 10 a 14 digitos">
+            </label>
+            
+            <br><output id="salidaTelefono"></output>
+        </p>
+        
+         <p>
+                <label accesskey="F">
+                    Fecha
+                    <input name="fecha" type="date" required
+                           max="2021-01-24" min="2020-01-24" 
+                           placeholder="dd/mm/aaaa" >
+                </label>
+                
+                <output id="salidaFecha"></output>
+                <output id="salidaFecha1"></output>
+            </p>
+        <p><input type="submit" value="Procesar">
+        <input type="reset" value="Limpiar">
+        </p>
+        <script src="js/Proveedores.js"></script>
+        </form>
+        <footer>
+            Copyright alma velez 2020
+        </footer>
+      </body>
+</html>
